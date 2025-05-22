@@ -1,0 +1,6 @@
+com\example\library\controllers\BookController.class
+com\example\library\controllers\HealthCheckController.class
+com\example\library\domain\Book.class
+com\example\library\controllers\AuthorController.class
+com\example\library\domain\Author.class
+com\example\library\LibraryApplication.class
