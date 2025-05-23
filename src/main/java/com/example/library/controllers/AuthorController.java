@@ -11,6 +11,12 @@ import java.util.List;
 public class AuthorController {
     private final List<Author> authors = new ArrayList<>();
 
+    public AuthorController() {
+        authors.add(new Author(1, "Лев Толстой"));
+        authors.add(new Author(2, "Фёдор Достоевский"));
+        authors.add(new Author(3, "Антон Чехов"));
+    }
+
     @GetMapping
     public List<Author> getAllAuthors() {
         return authors;

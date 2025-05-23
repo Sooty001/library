@@ -11,6 +11,12 @@ import java.util.List;
 public class BookController {
     private final List<Book> books = new ArrayList<>();
 
+    public BookController() {
+        books.add(new Book(1, "Война и мир", 1));
+        books.add(new Book(2, "Преступление и наказание", 2));
+        books.add(new Book(3, "Вишнёвый сад", 3));
+    }
+
     @GetMapping
     public List<Book> getAllBooks() {
         return books;
